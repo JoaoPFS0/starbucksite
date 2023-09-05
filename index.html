@@ -10,8 +10,9 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <section>
+        <div class="circle"></div>
         <header>
-            <a href="#"><img src="C:\Users\rafae\Documents\VSCODE\logo.png" class="logo"></a>
+            <a href="#"><img src="logo.png" class="logo"></a>
             <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Menu</a></li>
@@ -27,12 +28,26 @@
              odit deleniti quos dolorem hic minima consequatur doloremque! Soluta.</p>
                  <a href="#">Learn More</a></div>
             <div class=" imgBox">
-            <img src="C:\Users\rafae\Documents\VSCODE\img.1.png" class="Starbucks"></div>
+            <img src="img.1.png" class="Starbucks"></div>
         </div>
         <ul class="thumb">
-            <li><img src="C:\Users\rafae\Documents\VSCODE\thumb1.png" class="thumb1"></li>
-            <li><img src="C:\Users\rafae\Documents\VSCODE\thumb2.png" class="thumb2"></li>
-            <li><img src="C:\Users\rafae\Documents\VSCODE\thumb3.png" class="thumb3"></li>
+            <li><img src="thumb1.png" class="thumb1" onclick="imgSlider ('img.1.png'); changeCircleColor('#017143')"></li>
+            <li><img src="thumb2.png" class="thumb2" onclick="imgSlider ('img.2.png'); changeCircleColor('#eb7495')"></li>
+            <li><img src="thumb3.png" class="thumb3" onclick="imgSlider ('img.3.png'); changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+            <li><a href="#"><img src="social.png"></a></li>
         </ul>
     </section>
+    <script type="text/javascript">
+        function imgSlider (anything){
+            document.querySelector('.Starbucks').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle')
+            circle.style.background = color;
+        }
+    </script>
 </html>
