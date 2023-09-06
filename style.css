@@ -73,7 +73,6 @@ header ul li a{
 
 .content .textBox h2 span{
     color: #017143;
-    font-size: 1.2em;
     font-weight: 900;
 }
 
@@ -169,14 +168,142 @@ header ul li a{
     clip-path: circle(600px at right 800px);
 }
 
-@media (max-width: 1024px) {
-    .textBox h2{
-        margin-top: 80px;
-        width: auto;
-        height: 50%;
+@media (max-width: 1050px) {
+
+    .content{
+        width: 100vh%;
     }
-    .textBox h2 span{
-        
+    
+    .content .imgBox{
+        max-width: 300px;
+        height: auto;
+        padding-right: 0px;
+    }
+
+    .content .imgBox img{
+        max-width: 300px;
+        height: auto;
+    }
+
+    .textBox {
+        width: 500px;
+        font-size: 80%;
 
     }
+    .textBox h2 span{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .textBox p {
+        width: 400px;
+    }
+
+    .circle{
+        clip-path: circle(600px at right 900px);
+    }
 }
+
+@media (max-width: 900px) {
+
+    section{
+        flex-direction: column;
+    }
+
+    .content .imgBox{
+        max-width: 250px;
+        height: auto;
+        padding-right: 0px;
+        margin-left: 20px;
+    }
+
+    .content .imgBox img{
+        max-width: 250px;
+        height: auto;
+    }
+
+    .textBox {
+        width: 500px;
+        font-size: 67%;
+
+    }
+    .textBox h2 span{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .textBox p {
+        width: 300px;
+        font-size: 11px;
+    }
+
+    .circle{
+        clip-path: circle(600px at right 900px);
+        max-height: 720px;
+    }
+
+    .thumb{
+        bottom: 200px;
+    }
+}
+
+@media (max-width: 775px) {
+
+    .content .imgBox{
+        max-width: 190px;
+        height: auto;
+        padding-right: 0px;
+        margin-left: 20px;
+    }
+
+    .content .imgBox img{
+        max-width: 190px;
+        height: auto;
+    }
+
+    .textBox {
+        width: 500px;
+        font-size: 50%;
+
+    }
+
+    .textBox p {
+        width: 300px;
+        font-size: 11px;
+    }
+
+    .circle{
+        clip-path: circle(600px at right 800px);
+        max-height: 720px;
+    }
+
+    .thumb{
+        bottom: 300px;
+    }
+}
+
+@media (max-width: 775px) {
+
+    header .logo{
+        max-width: 60px;
+    }
+
+    section{
+        padding: 75px;
+    }
+
+    header ul li a{
+        font-size: 85%;
+    }
+
+    .circle{
+        clip-path: circle(600px at right 850px);
+        max-height: 650px;
+    }
+
+    .sci li a{
+        display: none;
+    }
+}
+
+@media (max-width: 775px)
