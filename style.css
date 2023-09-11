@@ -394,6 +394,17 @@ header ul li a{
         padding: 20 0px;
     }
 
+    header .navigation_header ul{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header .navigation_header ul li a{
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
     .navigation_header{
         position: relative;
         flex-direction: column;
@@ -409,7 +420,9 @@ header ul li a{
     }
 
     header .logo{
-        justify-content: left;
-        position: relative;
         max-width: 68px;
+        position: fixed;
+        left: 30px;
+        top: 45px;
     }
+}
